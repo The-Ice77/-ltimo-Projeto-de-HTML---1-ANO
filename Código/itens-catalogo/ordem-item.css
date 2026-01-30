@@ -1,0 +1,100 @@
+html {
+  background-color: rgb(29, 28, 28);
+  color: white;
+}
+header {
+  border-bottom: 0.2vh solid black;
+  background-color: black;
+}
+.cabecalho {
+  height: 11.1vh;
+  width: 177.8vh;
+  display: flex;
+  margin-right: 2.8vh;
+  padding-left: 9.3vh;
+}
+.caixa {
+  position: absolute;
+  border-radius: 20px;
+  background-color: rgb(34, 34, 34);
+}
+.caixa > h1 {
+  position: absolute;
+  left: 75vh;
+}
+.nnota {
+  position: absolute;
+  left: 75vh;
+  top: 10vh;
+}
+.ntag {
+  position: absolute;
+  left: 75vh;
+  top: 18vh;
+}
+.nindica {
+  position: absolute;
+  left: 75vh;
+  top: 28vh;
+}
+.cindica {
+  background-color: orange;
+  border-radius: 1px;
+  border: solid orange 1px;
+  position: absolute;
+  left: 75vh;
+  top: 34vh;
+}
+
+.nota {
+  border: solid yellow 2px;
+  position: absolute;
+  left: 75vh;
+  top: 16vh;
+  border-radius: 10px;
+}
+
+.caixa > img {
+  position: relative;
+  border: solid red 2px;
+}
+.caixatags {
+  top: 25vh;
+  position: relative;
+  border: solid red 2px;
+  float: right;
+  right: 75vh;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin: 5px;
+  border-radius: 50px;
+}
+.sinopse {
+  position: relative;
+  background-color: rgb(67, 67, 67);
+  border: solid black 2px;
+  top: 1%;
+}
+.baixar {
+  background-color: greenyellow;
+  border: solid black 2px;
+  border-radius: 10px;
+  color: black;
+  padding: 4px;
+  position: relative;
+  float: right;
+  width: 100px;
+  height: 40px;
+}
+.direito {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: 0.2vh solid black;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.9vh;
+  height: 3.7vh;
+}
