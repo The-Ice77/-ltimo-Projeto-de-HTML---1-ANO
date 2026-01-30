@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+html {
+    background-color: rgb(29, 28, 28);
+}
+
+.cabecalho {
+    height: 11.1vh;
+    width: 177.8vh;
+    display: flex;
+    margin-right: 2.8vh;
+    padding-left: 9.3vh;
+}
+
+.titulo {
+    padding-right: 50.9vh;
+    padding-left: 0.9vh;
+    padding-top: 2.3vh;
+    font-size: 4.6vh;
+}
+
+.categorias {
+    font-size: 2.8vh;
+    padding-right: 5.6vh;
+    padding-top: 2.8vh;
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 0.2vh solid black; 
+    background-color: black;
+}
+
+.superior {
+    background: linear-gradient(90deg, #b00000, #1a0000);
+    padding: 5.6vh 3.7vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inferior h2{
+    font-size: 3.7vh;
+    margin-bottom: 1.9vh;
+}
+
+.inferior p{
+    width: 50vh;
+    font-size: 2vh;
+}
+
+button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 1.1vh 1.9vh; 
+    border-radius: 1.9vh; 
+    cursor: pointer;
+}
+
+.inferior {
+    display: flex;
+    justify-content: space-between;
+    padding: 5.6vh 3.7vh; 
+}
+
+.cards {
+    width: 16.7vh; 
+    margin-right: 1.9vh; 
+    border-radius: 0.6vh;  
+}
+
+.direito {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 0.2vh solid black;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9vh;
+    height: 3.7vh;
+}
+
+.dragao {
+    width: 40vh;
+    height: auto;
+}
