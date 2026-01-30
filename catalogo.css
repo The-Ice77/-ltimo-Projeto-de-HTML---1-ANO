@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+html {
+  background-color: rgb(29, 28, 28);
+}
+
+.cabecalho {
+  height: 11.1vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 2.8vh;
+  padding-left: 3.3vh;
+  padding-right: 4.5vh;
+  justify-content: space-between;
+}
+#titulo {
+    display: flex;
+    justify-content: start;
+    gap: 1.5vh;
+}
+
+#nav a:hover{
+    color: #b00000;
+}
+
+#D20 {
+    height: 9vh;
+}
+
+
+.titulo {
+  padding-right: 50.9vh;
+  padding-left: 0.9vh;
+  padding-top: 2.3vh;
+  font-size: 4.6vh;
+}
+
+.categorias {
+  font-size: 2.8vh;
+  padding-right: 5.6vh;
+  padding-top: 2.8vh;
+  text-decoration: none;
+}
+
+.Elementos > p {
+  font-size: medium;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.Elementos > h1 {
+  font-size: x-large;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.superior {
+  background: linear-gradient(90deg, #b00000, #1a0000);
+  padding: 5.6vh 3.7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 27vh;
+  overflow: hidden;
+}
+.superior .livro {
+  margin-right: 0vh;
+  box-sizing: border-box;
+  height: 22vh;
+}
+
+button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 1.1vh 1.9vh;
+  border-radius: 1.9vh;
+  cursor: pointer;
+}
+
+header {
+  border-bottom: 0.2vh solid black;
+  background-color: black;
+}
+
+span {
+  color: red;
+}
+
+.livros {
+  margin-top: 2vh;
+  margin-left: 3.5vh;
+}
+
+.investigacao > h2 {
+  margin-bottom: 2vh;
+}
+
+.fantasia > h2 {
+  margin-bottom: 2vh;
+}
+
+.livros .fantasia {
+  margin-bottom: 7vh;
+}
+
+a img {
+  height: 47.5vh;
+  width: 35vh;
+}
+
+.investigacao > div {
+  display: flex;
+  gap: 4vh;
+  flex-wrap: wrap;
+}
+.fantasia > div {
+  display: flex;
+  gap: 4vh;
+  flex-wrap: wrap;
+}
+
+.direito {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: 0.2vh solid black;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.9vh;
+  height: 3.7vh;
+}
