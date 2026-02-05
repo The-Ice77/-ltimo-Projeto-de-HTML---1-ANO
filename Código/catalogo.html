@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="catalogo.css" />
-    <link rel="shortcut icon" href="imagens/d20-vermelho.png" type="image/x-icon">
-    <title>Catálogo</title>
+    <link rel="shortcut icon" href="imagens/D20.png" type="image/x-icon">
+    <title>Catalogo</title>
   </head>
-
   <body>
     <header>
       <div class="cabecalho">
         <div id="titulo">
           <img
-            src="Imagens/d20-vermelho.png"
+            src="imagens/D20.png"
             alt="D20"
             id="D20"
           />
@@ -34,48 +33,200 @@
             Uma grandiosa quantidade de gêneros a explorar, onde você poderá
             jogar desde uma aventura à um mistério sombrio.
           </p>
-          <button>Ver Catálogo</button>
         </div>
-        <img src="Imagens/livros.png" alt="Dragão Sensual" class="livro" />
+        <img src="imagens/livros.png" alt="Dragão Sensual" class="livro" />
       </section>
       <section class="livros">
-        <div class="investigacao">
+        <div class="categoria">
           <h2><span>▶</span> Investigação</h2>
           <div>
-            <a href="/-ltimo-Projeto-de-HTML---1-ANO-main/Código/itens-catalogo/Padrão.html"
+            <a href="itens-catalogo/OrdemParanormal.html" class="Desc-card"
               ><img
-                src="Imagens/ordem-paranormal.png"
+                src="imagens/Ordem Paranormal.jpg"
                 alt="Ordem Paranormal RPG"
-            /></a>
-            <a href=""
+                data-desc="Ordem Paranormal é um sistema feito por um Youtuber e stremer conhecido por Cellbit. O sistema de Ordem envolve combate, terror e o principal Investigação.
+                O seu personagem é um agente da Ordo dos realitas, que desde dos anos 40 estar em atuação estar enfrentando criaturas do outro lado da membrana, será que você é capaz 
+                de enfrentar os perigo e desvendar os mistérios de Ordem Paranormal"
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="itens-catalogo/Kult.html" class="Desc-card"
               ><img
                 src="https://m.media-amazon.com/images/I/81+H1l1Gj3L._AC_UF1000,1000_QL80_.jpg"
-                alt=""
-            /></a>
-            <a href=""
+                alt="Kult"
+                data-desc="Kult é um aclamado e infame jogo de RPG (Role Playing Game) de horror contemporâneo e psicológico que explora a ideia de que a 
+                realidade em que vivemos é uma ilusão ou prisão, da qual a humanidade pode despertar para sua verdadeira natureza divina."
+
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="itens-catalogo/Cultos.html" class="Desc-card"
               ><img
                 src="https://newtonrocha.wordpress.com/wp-content/uploads/2020/02/cultos-innombrables.jpg"
-                alt=""
-            /></a>
+                alt="Cultos idomaveis"
+                data-desc="Diferente do clássico Call of Cthulhu, onde você foge de monstros para não enlouquecer, em Cultos Inomináveis você é quem 
+                abre os livros proibidos. Você assume o papel de alguém que descobriu que os Mitos são reais e decidiu que conhecimento é poder. O horror 
+                não vem apenas do monstro sob a cama, mas do que você está disposto a sacrificar para controlá-lo"
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="" class="Desc-card"
+              ><img
+                src="imagens/Cthulhu.png"
+                alt="Cthulhu"
+                data-desc="Call of Cthulhu (O Chamado de Cthulhu) é o RPG definitivo de horror cósmico e investigação, inspirado nas obras de H.P. Lovecraft.
+                 Diferente de outros jogos onde os personagens são heróis poderosos, aqui você interpreta
+                 pessoas comuns — jornalistas, detetives, professores — enfrentando entidades cujas simples existências desafiam a lógica e a sanidade humana."
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="" class="Desc-card"
+              ><img
+                src="imagens/enigma do sol oculto.jpg"
+                alt="ESO"
+                data-desc="O Enigma do Sol Oculto (Enigma of the Hidden Sun) é uma campanha de longa duração que leva o horror pessoal para uma 
+                escala cósmica e metafísica. Diferente de aventuras focadas apenas no cotidiano sombrio, esta jornada é 
+                um convite direto para que os personagens rompam a 'ilusão' e caminhem pela verdadeira realidade."
+            /><div class="overlay-desc"></div></a>
+            
           </div>
         </div>
         <br />
-        <div class="fantasia">
+        <div class="categoria1">
           <h2><span>▶</span> Fantasia</h2>
           <div>
-            <a href=""
+            <a href="itens-catalogo/DeD.html" class="Desc-card"
               ><img
                 src="https://m.media-amazon.com/images/I/71kM9wdaeHL.jpg"
                 alt="Dungeons & Dragons 5ª Edição"
-            /></a>
-            <a href=""
-              ><img src="Imagens/tormenta-20.png" alt="Tormenta 20"
-            /></a>
-            <a href=""
+                data-desc="Dungeons & Dragons (D&D) é o pai de todos os RPGs de mesa, focado em fantasia heroica. Ao contrário do horror existencial de Kult ou da 
+                fragilidade de Call of Cthulhu, em D&D 
+                você interpreta heróis que evoluem de simples aventureiros a figuras lendárias 
+                capazes de desafiar deuses."
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="itens-catalogo/Tormenta.html" class="Desc-card"
+              ><img src="imagens/tormenta-20.png" alt="Tormenta 20"
+              data-desc="Se o D&D é o pai da fantasia, Tormenta20 (T20) é o herói nacional que elevou o nível do RPG no Brasil. Criado pela Jambô Editora, 
+              ele é o sistema de maior sucesso no país, ambientado no mundo de Arton, um cenário que mistura fantasia épica com um toque de anime e drama."
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="itens-catalogo/dangeonW.html" class="Desc-card"
               ><img
                 src="https://m.media-amazon.com/images/I/91YJ9ZYjCgL._AC_UF1000,1000_QL80_.jpg"
                 alt="Dungeon World"
-            /></a>
+                data-desc="Dungeon World tem como objetivo criar uma história de fantasia épica de forma colaborativa, onde o Mestre (Narrador) e os 
+                jogadores constroem o mundo e a aventura juntos, 
+                com a história fluindo naturalmente da conversa na mesa. As regras servem de suporte para impulsionar a narrativa, 
+                em vez de ditar cada ação tática."
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="" class="Desc-card"
+              ><img
+                src="https://bibliotecaelfica.org/wp-content/uploads/2023/01/savage-worlds-livro-de-regras-edic3a7c3a3o-brasileira-biblioteca-c3a9lfica.jpg"
+                alt="Savage World"
+                data-desc="Savage Worlds é um sistema de RPG diferentes dos normais e modular que se destaca por ser 'Rápido, Furioso e Divertido!'. Diferente de jogos focados em um único cenário como D&D ou Kult, ele fornece um conjunto de regras flexíveis que podem ser adaptadas para qualquer gênero, desde fantasia medieval e faroeste sobrenatural até ficção científica e horror."
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="" class="Desc-card"
+              ><img
+                src="https://m.media-amazon.com/images/I/91rCXEMdEFL._SY342_.jpg"
+                alt="Mouse guard"
+                data-desc="Mouse Guard é um aclamado RPG de mesa baseado na premiada série de histórias em quadrinhos de David Petersen, onde os jogadores 
+                assumem o papel de ratos heroicos que defendem seu povo dos perigos da natureza selvagem e de outras ameaças. Todo quer virar ratinhos fofinhos"
+            /><div class="overlay-desc"></div></a>
+            
+          </div>
+        </div>
+        <br>
+        <div class="categoria1">
+          <h2><span>▶</span> Aventura</h2>
+          <div>
+            <a href="" class="Desc-card"
+              ><img
+                src="https://newordereditora.com/wp-content/uploads/2022/11/Capa-STA-1.jpg"
+                alt="Star trek"
+                data-desc="Star Trek Adventures é o RPG oficial que transporta você para o convés de uma nave da Frota Estelar. Publicado originalmente pela Modiphius Entertainment e 
+                trazido para o Brasil pela New Order Editora, o jogo captura o espírito de exploração, diplomacia e ação da série de TV"
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="" class="Desc-card"
+              ><img src="https://m.media-amazon.com/images/I/81XTOCJdoEL._AC_UF1000,1000_QL80_.jpg" alt="Hora de aventura"
+              data-desc="O RPG de Hora de Adventure (Adventure Time Roleplaying Game) transporta a loucura e a emoção da Terra de Ooo para a mesa de jogo. Atualmente, existem duas formas principais de jogar oficialmente, 
+              dependendo do sistema que você prefere: O Sistema Oficial e A Nova Versão (Baseada em D&D 5E)"
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="" class="Desc-card"
+              ><img
+                src="https://bibliotecaelfica.org/wp-content/uploads/2023/01/star-wars-rpg-edic3a7c3a3o-saga-v1-0-impc3a9rio-rebelde-biblioteca-c3a9lfica.jpg"
+                alt="Star wars"
+                data-desc="Star Wars é uma das maiores franquias de ópera espacial épica do mundo, conhecida por seus filmes, séries, livros e jogos. 
+                O universo gira em torno do conflito entre o bem e o mal, 
+                manifestado através da Força, e a luta entre a Ordem Jedi e os Lordes Sith"
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="" class="Desc-card"
+              ><img
+                src="https://i0.wp.com/jogaod20.com/wp-content/uploads/2024/08/Cacadores-de-Saci-RPG.jpeg?resize=700%2C993&ssl=1"
+                alt="Caçadores de saci"
+                data-desc="Caçadores de Saci é um RPG nacional de fantasia folclórica focado em aventura, mistério e a preservação das lendas brasileiras. 
+                Criado por Alan de Jesus Silva, o jogo coloca os jogadores no papel de protetores da natureza e do folclore em um Brasil 
+                contemporâneo ou histórico, onde o sobrenatural se esconde nas matas e vilarejos. Em terra de saci o primeiro que der rasteira cai"
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="" class="Desc-card"
+              ><img
+                src="https://imgv2-2-f.scribdassets.com/img/document/595037042/original/f8a79dd362/1?v=1"
+                alt="Avatar Legends"
+                data-desc="Avatar Legends The Roleplaying Game é o RPG oficial do universo de Avatar: A Lenda de Aang e A Lenda de Korra, que permite aos 
+                jogadores criarem jovens heróis — dobradores ou não-dobradores — em uma jornada 
+                por equilíbrio e aventura nas Quatro Nações"
+            /><div class="overlay-desc"></div></a>
+            
+          </div>
+        </div>
+        <br>
+        <div class="categoria1">
+          <h2><span>▶</span> Ação</h2>
+          <div>
+            <a href="" class="Desc-card"
+              ><img
+                src="https://imgv2-2-f.scribdassets.com/img/document/808841608/original/f7fa60b05a/1?v=1"
+                alt="Sacramento"
+                data-desc="Sacramento é um RPG nacional de faroeste à mineira, lançado pela Jambô Editora e criado pelo streamer Thiago Calango Elias em parceria 
+                com o game designer Ramon Mineiro. 
+                O jogo transporta o gênero faroeste para um Brasil alternativo de 1880, substituindo cowboys 
+                tradicionais por vaqueiros, jagunços e cangaceiros em um cenário inspirado nas paisagens e cultura de Minas Gerais."
+            /><div class="overlay-desc"></div></a>
+            <a href="" class="Desc-card"
+              ><img src="https://bibliotecaelfica.org/wp-content/uploads/2023/01/mutantes-malfeitores-livro-bc3a1sico-edic3a7c3a3o-revisada-biblioteca-c3a9lfica.jpg" 
+                    alt="MeM"
+                    data-desc="Se o seu negócio é virar um super-herói, Mutantes & Malfeitores (M&M) é o sistema definitivo. Enquanto
+                     o D&D foca em classes rígidas, o M&M usa um sistema de pontos que permite criar literalmente qualquer poder que você imaginar, 
+                    desde um bilionário com gadgets até um alienígena que controla o tempo"
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="" class="Desc-card"
+              ><img
+                src="https://cdn.awsli.com.br/800x800/2003/2003226/produto/164011765/bb44b085be.jpg"
+                alt="LDF"
+                data-desc="A Lenda do Dragão de Fogo (Karyu Densetsu) é um aclamado RPG de mesa nacional que simula as histórias de animes e 
+                mangás de luta seinen (focados em um público adulto, com temas mais sérios e filosóficos)."
+            /><div class="overlay-desc"></div></a>
+  
+            <a href="" class="Desc-card"
+              ><img
+                src="https://website-assets.studocu.com/img/document_thumbnails/e3fa6252a672def9a9a64035b6208ec5/thumb_1200_1696.png"
+                alt="Jujutsu kaizen"
+                data-desc="Jujutsu kaizen é um conjunto de regras adaptadas de outros sistemas populares, como Ordem Paranormal RPG, Anjos ou Tormenta, para 
+                permitir que os jogadores criem feiticeiros, manipulem Energia Amaldiçoada e enfrentem Maldições."
+            /><div class="overlay-desc"></div></a>
+            
+            <a href="" class="Desc-card"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/pt/1/19/Cyberpunk_2020_capa.jpeg"
+                alt="Cyberpunk"
+                data-desc="Cyberpunk 2020 é um RPG de mesa clássico de ficção científica distópica, criado por Mike Pondsmith e originalmente 
+                publicado pela R. Talsorian Games. Ele é a segunda edição do jogo e serviu como a 
+                principal base para o popular videogame Cyberpunk 2077 da CD Projekt Red"
+                
+            /><div class="overlay-desc"></div></a>
           </div>
         </div>
       </section>
@@ -91,7 +242,6 @@
         <p>2026 © Copyright - Todos os direitos reservados.</p>
       </div>
     </footer>
+    <script src="catalogo.js" defer></script>
   </body>
 </html>
-
-
