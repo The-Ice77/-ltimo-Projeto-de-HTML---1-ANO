@@ -19,13 +19,23 @@ São responsáveis por criar a chamada responsividade do site entre dispositivos
 
 uma parte importante que não foi realmente necessária durante o processo, para os programadores se tornou bem mais intuitivo outros métodos de responsividade ja usadas anteriormente, por esse motivo optamos por não utiliza-los, mas deixando a possibilidade de incrementa-lo em alterações futuras, ja que pelo rumo que estamos seguindo, o RPGDEX pode se tornar algo fora dos arquivos e linhas.
 
+Porem mesmo assim para concluirmos os requisitos do projeto, utilizamos na area catalogo, ja que seria a parte de maior parte de acesso do site, e faria grande sentido que ela tivesse esse foco.
+
+descrevendo o uso, colocamos um tamanho máximo para 900px, mostrado na linha css 221(@media (max-width: 900px) {  .card-livro {
+    width: 170px;
+    height: 255px;
+  })
+e na linha 229 onde o máximo se tornou 600px(@media (max-width: 600px) {  .card-livro {
+    width: 140px;
+    height: 210px;)
+
 Flexbox:
-Parte crucial na organização dos elementos, de exemplo temos o alingn-items: center; e o justfy-content: space-between; da pagina inicial do site que usamos para organizar os elementos horizontalmente dentro das regiões criadas
+Parte crucial na organização dos elementos, de exemplo temos o alingn-items: center; e o justify-content: space-between; da pagina inicial do site que usamos para organizar os elementos horizontalmente dentro das regiões criadas
 que serviram para criar intervalos entre os elementos e centraliza-los nos containers desejados.
 
 de exemplo semelhante temos o catalogo que usou o mesmo sistema de organização do "inicio".
 
-Na pagina "sobre" se identifica o justfy-content: start; que foi usado na zona de titulo para mover os elementos em direção ao inicio da pagina.
+Na pagina "sobre" se identifica o justify-content: start; que foi usado na zona de titulo para mover os elementos em direção ao inicio da pagina.
 
 fixando a importância do display: flex; que utilizamos em outra boa parte do código que é facilmente observada, ela serviu para alterar o eixo de exibição dos elementos e se tornou o pontapé inicial ao usar o FlexBox, ja que a forma 
 como esses elementos passam a se comportar devido a indicação flex tornou a manipulação deles possível e mais funcional no processo
