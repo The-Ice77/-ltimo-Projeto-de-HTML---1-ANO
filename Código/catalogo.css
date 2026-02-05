@@ -1,3 +1,5 @@
+/* Reset geral: remove margens e paddings padrões,
+   ajusta box model e define fonte padrão */
 * {
   margin: 0;
   padding: 0;
@@ -6,38 +8,42 @@
   color: white;
 }
 
+/* Cor de fundo padrão do site */
 html {
   background-color: rgb(29, 28, 28);
 }
 
+/* Cabeçalho principal do site */
 .cabecalho {
   height: 11.1vh;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-right: 2.8vh;
   padding-left: 3.3vh;
   padding-right: 4.5vh;
-  justify-content: space-between;
-  
 }
 
+/* Área do título com logo + nome */
 #titulo {
-    display: flex;
-    justify-content: start;
-    gap: 1.5vh;
-    width: 20vh
+  display: flex;
+  justify-content: start;
+  gap: 1.5vh;
+  width: 20vh;
 }
 
-#nav a:hover{
-    color: #b00000;
+/* Efeito hover nos links da navegação */
+#nav a:hover {
+  color: #b00000;
 }
 
+/* Tamanho do ícone D20 */
 #D20 {
-    height: 9vh;
+  height: 9vh;
 }
 
-
+/* Estilo do texto do título principal */
 .titulo {
   padding-right: 50.9vh;
   padding-left: 0.9vh;
@@ -45,6 +51,7 @@ html {
   font-size: 4.6vh;
 }
 
+/* Links das categorias */
 .categorias {
   font-size: 2.8vh;
   padding-right: 5.6vh;
@@ -52,17 +59,21 @@ html {
   text-decoration: none;
 }
 
+/* Texto dentro dos cards (parágrafo) */
 .Elementos > p {
   font-size: medium;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
+/* Títulos dentro dos cards */
 .Elementos > h1 {
   font-size: x-large;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
+/* Seção superior com banner */
 .superior {
   background: linear-gradient(90deg, #b00000, #1a0000);
   padding: 5.6vh 3.7vh;
@@ -72,70 +83,60 @@ html {
   height: 27vh;
   overflow: hidden;
 }
+
+/* Imagem do livro no banner */
 .superior .livro {
-  margin-right: 0vh;
   box-sizing: border-box;
   height: 22vh;
 }
-
-button {
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 1.1vh 1.9vh;
-  border-radius: 1.5vh;
-  margin-top: 2vh;
-  cursor: pointer;
-}
-button:hover{
-  background-color: #ff0000;
-  border: 0.2vh black solid;
-}
-
-
+/* Header fixo com linha inferior */
 header {
   border-bottom: 0.2vh solid black;
   background-color: black;
 }
 
+/* Destaque em vermelho */
 span {
   color: red;
 }
 
+/* Área geral dos livros */
 .livros {
   margin-top: 2vh;
   margin-left: 3.5vh;
-}
-
-.investigacao > h2 {
-  margin-bottom: 2vh;
-}
-
-.fantasia > h2 {
-  margin-bottom: 2vh;
-}
-
-.livros .fantasia {
   margin-bottom: 7vh;
 }
 
+/* Tamanho padrão das imagens clicáveis */
 a img {
   height: 47.5vh;
   width: 35vh;
-  border-radius: 2vh;
 }
 
-.investigacao > div {
-  display: flex;
-  gap: 4vh;
-  flex-wrap: wrap;
-}
-.fantasia > div {
+/* Organização dos cards das categorias */
+.categoria > div,
+.categoria1 > div {
   display: flex;
   gap: 4vh;
   flex-wrap: wrap;
 }
 
+/* Imagens dos cards */
+.categoria img,
+.categoria1 img {
+  height: 47.5vh;
+  width: 35vh;
+  object-fit: cover;
+  border-radius: 1vh;
+}
+
+/* Espaçamento dos títulos das categorias */
+.categoria h2,
+.categoria1 h2 {
+  margin-bottom: 2vh;
+}
+
+/* Rodapé fixo */
 .direito {
   display: flex;
   justify-content: flex-start;
@@ -143,21 +144,91 @@ a img {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border: 0.2vh solid black;
-  background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.9vh;
   height: 5vh;
   gap: 60vh;
+  border: 0.2vh solid black;
+  background-color: black;
+  font-size: 1.9vh;
 }
 
+/* Área dos ícones de plataformas */
 .direito .plataformas {
-    display: flex;
-    margin-left: 10vh;
-    gap: 2vh;
+  display: flex;
+  margin-left: 10vh;
+  gap: 2vh;
 }
 
+/* Tamanho dos ícones */
 .plataformas img {
-    width: 2.5vh;
+  width: 2vh;
+  height: 2vh;
+}
 
+/* Caixa flutuante de descrição */
+.caixinha-desc { 
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  max-width: 220px;
+  display: none;
+  z-index: 9999;
+  border: 1px solid #b00000;
+  pointer-events: none;
+}
+
+/* Card com descrição em overlay */
+.Desc-card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Imagem dentro do card */
+.Desc-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay de descrição */
+.overlay-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 12px;
+  font-size: 13px;
+  opacity: 0;
+  transition: 0.3s;
+  overflow-y: auto;
+}
+
+/* Mostra a descrição ao passar o mouse */
+.Desc-card:hover .overlay-desc {
+  opacity: 1;
+}
+
+/* Ajustes para tablets */
+@media (max-width: 900px) {
+  .card-livro {
+    width: 170px;
+    height: 255px;
+  }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+  .card-livro {
+    width: 140px;
+    height: 210px;
+  }
 }
