@@ -1,21 +1,10 @@
+/* Estilo do header */
 header {
-    border-bottom: 0.2vh solid black; 
-    background-color: black;
+  border-bottom: 0.2vh solid black;
+  background-color: black;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-html {
-    background-color: rgb(29, 28, 28);
-}
-
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -24,38 +13,41 @@ html {
   color: white;
 }
 
+/* Fundo do site */
 html {
   background-color: rgb(29, 28, 28);
 }
 
+/* Cabeçalho principal */
 .cabecalho {
   height: 11.1vh;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-right: 2.8vh;
   padding-left: 3.3vh;
   padding-right: 4.5vh;
-  justify-content: space-between;
-  
 }
 
+/* Área do título */
 #titulo {
-    display: flex;
-    justify-content: start;
-    gap: 1.5vh;
-    width: 20vh
+  display: flex;
+  gap: 1.5vh;
+  width: 20vh;
 }
 
-#nav a:hover{
-    color: #b00000;
+/* Hover dos links */
+#nav a:hover {
+  color: #b00000;
 }
 
+/* Imagem do D20 */
 #D20 {
-    height: 9vh;
+  height: 9vh;
 }
 
-
+/* Título principal */
 .titulo {
   padding-right: 50.9vh;
   padding-left: 0.9vh;
@@ -63,6 +55,7 @@ html {
   font-size: 4.6vh;
 }
 
+/* Links de categorias */
 .categorias {
   font-size: 2.8vh;
   padding-right: 5.6vh;
@@ -70,17 +63,19 @@ html {
   text-decoration: none;
 }
 
+/* Textos das seções */
 .Elementos > p {
   font-size: medium;
   word-wrap: break-word;
-  overflow-wrap: break-word;
 }
+
+/* Títulos das seções */
 .Elementos > h1 {
   font-size: x-large;
   word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
+/* Seção superior */
 .superior {
   background: linear-gradient(90deg, #b00000, #1a0000);
   padding: 5.6vh 3.7vh;
@@ -91,130 +86,113 @@ html {
   overflow: hidden;
 }
 
-
+/* Botões */
 button {
   background: #000;
-  color: #fff;
   border: none;
   padding: 1.1vh 1.9vh;
   border-radius: 1.5vh;
   margin-top: 2vh;
   cursor: pointer;
 }
-button:hover{
+
+/* Hover do botão */
+button:hover {
   background-color: #ff0000;
-  border: 0.2vh black solid;
 }
 
-
-header {
-  border-bottom: 0.2vh solid black;
-  background-color: black;
-}
-
-.direito {
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  border: 0.2vh solid black;
-  background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.9vh;
-  height: 3.7vh;
-}
-
-
-header {
-    border-bottom: 0.2vh solid black; 
-    background-color: black;
-}
-
+/* Rodapé */
 .direito {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  border: 0.2vh solid black;
   background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.9vh;
   height: 5vh;
   gap: 60vh;
 }
 
+/* Ícones do rodapé */
 .direito .plataformas {
-    display: flex;
-    margin-left: 10vh;
-    gap: 2vh;
+  display: flex;
+  margin-left: 10vh;
+  gap: 2vh;
 }
 
 .plataformas img {
-    width: 2.5vh;
-
+  width: 2.5vh;
 }
 
-main{
-    display: flex;
-    gap: 10vh;
+/* Área principal */
+main {
+  display: flex;
+  gap: 10vh;
 }
 
-.formulario{
-    width: 100vh;
-    margin-top: 5vh;
-    margin-left: 5vh
+/* Área do formulário */
+.formulario {
+  width: 100vh;
+  margin-top: 5vh;
+  margin-left: 5vh;
 }
 
-form{
-    padding: 3vh;
-    height: auto;
-    background-color: white;
-    border-radius: 2vh;
+/* Estilo do formulário */
+form {
+  padding: 3vh;
+  background-color: white;
+  border-radius: 2vh;
 }
 
-.texto{
-    width: 100vh;
-    margin-top: 5vh;
-    margin-right: 5vh;
+/* Área de texto */
+.texto {
+  width: 100vh;
+  margin-top: 5vh;
+  margin-right: 5vh;
 }
 
-input{
-    height: 5vh;
-    width: 90vh;
-    margin-bottom: 2vh;
-    border-radius: 1vh;
-    color: black;
-    padding: 1vh;
+/* Campos de input */
+input {
+  height: 5vh;
+  width: 90vh;
+  margin-bottom: 2vh;
+  border-radius: 1vh;
+  color: black;
+  padding: 1vh;
 }
 
-h2{
-    font-size: 5vh;
+/* Títulos */
+h2 {
+  font-size: 5vh;
 }
 
-.h2-formulario{
-    color: black;
+/* Título do formulário */
+.h2-formulario {
+  color: black;
 }
 
-p{
-    font-size: 2.5vh;
+/* Parágrafos */
+p {
+  font-size: 2.5vh;
 }
 
-button{
-    height: 6vh;
-    width: 20vh;
-    margin-top: 2vh;
-    border-radius: 2vh;
-    font-size: 2.5vh;
-    background-color: rgb(170, 36, 36);
-    color: white;
+/* Botão do formulário */
+button {
+  height: 6vh;
+  width: 20vh;
+  margin-top: 2vh;
+  border-radius: 2vh;
+  font-size: 2.5vh;
+  background-color: rgb(170, 36, 36);
+  color: white;
 }
 
-textarea{
-    width: 90vh;
-    height: 20vh;
-    border-radius: 1vh;
-    color: black;
-    padding: 1vh;
+/* Área de texto grande */
+textarea {
+  width: 90vh;
+  height: 20vh;
+  border-radius: 1vh;
+  color: black;
+  padding: 1vh;
 }
