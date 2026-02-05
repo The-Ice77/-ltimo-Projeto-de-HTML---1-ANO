@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -6,36 +7,41 @@
   color: white;
 }
 
+/* Fundo do site */
 html {
   background-color: rgb(29, 28, 28);
 }
 
+/* Cabeçalho */
 .cabecalho {
   height: 11.1vh;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-right: 2.8vh;
   padding-left: 3.3vh;
   padding-right: 4.5vh;
-  justify-content: space-between;
 }
 
+/* Área do título */
 #titulo {
   display: flex;
-  justify-content: start;
   gap: 1.5vh;
   width: 20vh;
 }
 
+/* Hover dos links */
 #nav a:hover {
   color: #b00000;
 }
 
+/* Imagem do D20 */
 #D20 {
   height: 9vh;
 }
 
+/* Título principal */
 .titulo {
   padding-right: 50.9vh;
   padding-left: 0.9vh;
@@ -43,6 +49,7 @@ html {
   font-size: 4.6vh;
 }
 
+/* Links de categoria */
 .categorias {
   font-size: 2.8vh;
   padding-right: 5.6vh;
@@ -50,17 +57,18 @@ html {
   text-decoration: none;
 }
 
+/* Textos das seções */
 .Elementos > p {
   font-size: medium;
   word-wrap: break-word;
-  overflow-wrap: break-word;
 }
+
 .Elementos > h2 {
   font-size: x-large;
   word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
+/* Seção superior */
 .superior {
   background: linear-gradient(90deg, #b00000, #1a0000);
   padding: 5.6vh 3.7vh;
@@ -70,105 +78,104 @@ html {
   height: 27vh;
   overflow: hidden;
 }
+
+/* Imagem do livro */
 .superior .livro {
-  margin-right: 0vh;
-  box-sizing: border-box;
   height: 22vh;
 }
 
+/* Botões */
 button {
   background: #000;
-  color: #fff;
   border: none;
   padding: 1.1vh 1.9vh;
   border-radius: 1.5vh;
   margin-top: 2vh;
   cursor: pointer;
 }
+
+/* Hover do botão */
 button:hover {
   background-color: #ff0000;
-  border: 0.2vh black solid;
 }
 
+/* Header */
 header {
   border-bottom: 0.2vh solid black;
   background-color: black;
 }
 
+/* Área principal de texto */
 .main-texto {
   display: flex;
   gap: 20vh;
 }
 
+/* Título do texto */
 .main-texto h2 {
   font-size: 4vh;
-  padding: 5vh 0vh 2vh 5vh;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  padding: 5vh 0 2vh 5vh;
 }
 
+/* Parágrafo do texto */
 .main-texto p {
   text-align: justify;
   font-size: 3vh;
   padding: 0 5vh 5vh 5vh;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
+/* Imagens do conteúdo */
 .main-texto img {
-  display: flex;
   height: 47.5vh;
   width: 35vh;
-  margin-right: 0vh;
   border-radius: 2vh;
 }
+
+/* Seção de imagens */
 .imagens {
   text-align: center;
   margin-right: 10vh;
 }
-.imagens h3 {
-  margin-right: 0;
-}
+
+/* Organização das imagens */
 .imagens div {
   display: flex;
   justify-content: center;
   gap: 5vh;
 }
 
+/* Títulos menores */
 div h3 {
   font-size: 3vh;
   text-align: center;
-  margin-right: 10vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin: 2vh 10vh;
 }
 
+/* Rodapé */
 .direito {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  border: 0.2vh solid black;
   background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.9vh;
   height: 5vh;
   gap: 60vh;
 }
 
+/* Ícones do rodapé */
 .direito .plataformas {
-    display: flex;
-    margin-left: 10vh;
-    gap: 2vh;
+  display: flex;
+  margin-left: 10vh;
+  gap: 2vh;
 }
 
 .plataformas img {
-    width: 2.5vh;
-
+  width: 2.5vh;
 }
 
+/* Imagem do dragão */
 .dragao {
   width: 40vh;
   height: auto;
